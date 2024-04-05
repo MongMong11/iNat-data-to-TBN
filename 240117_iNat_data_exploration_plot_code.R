@@ -114,4 +114,4 @@ random_ls<-sample(1:nrow(iNat_dt), size = 1000)
 random_table<-lapply(1:length(random_ls), function(i){
   return(iNat_dt[random_ls[i],])
 }) %>% do.call(rbind, .) %>%
-  write.csv(., "table/random_table.csv", fileEncoding = "UTF-8", row.names=FALSE)
+fwrite(., "table/random_table.csv")
