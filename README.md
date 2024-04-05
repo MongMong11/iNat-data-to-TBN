@@ -49,7 +49,7 @@
 * 根據上表「iNaturalist對應TBN填入資料欄位」重新命名與轉換欄位
 
 #### 3. catch county, Municipality, minimumElevationInMeters, issue
-說明: 使用 [Taiwanlandsea_TownCounty.shp](https://drive.google.com/drive/folders/126iWM4qQAWe1jqRP23W0KOJ_BLQLcM2d) 圖層和 [twdtm_asterV2_30m.tif](https://drive.google.com/drive/folders/126iWM4qQAWe1jqRP23W0KOJ_BLQLcM2d) 圖層抓取行政區、最低海拔欄位資料
+說明: 使用 [Taiwanlandsea_TownCounty.shp]() 圖層和 [twdtm_asterV2_30m.tif]() 圖層抓取行政區、最低海拔欄位資料
   * 根據有無經緯度資訊分割成: 無經緯度資料 `iNat_locNA` 和 有經緯度資料 `iNat_loc`
   *  有經緯度資料`iNat_loc`使用`catchlocation` function 抓取座標的行政區，並執行平行運算
   *  使用 `extract` 從 [twdtm_asterV2_30m.tif]() 抽取 `minimumElevationInMeters` 資料
