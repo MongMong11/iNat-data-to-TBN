@@ -37,7 +37,7 @@
 |user_login|recordedBy||
 |url|source||
 
-### Script [240112_iNat_transformation_code.R](https://github.com/TBNworkGroup/iNaturalist_data_to_OP/blob/main/240112_iNat_transformation_code.R) 細節說明
+### Script [240112_iNat_transformation_code.R]() 細節說明
 
 #### 1. initialization
   * 建立相對路徑 "D:/Mong Chen/240110_iNat to OP")
@@ -65,7 +65,7 @@
 #### 5. save file 
 * 分割並儲存檔案
 
-### Script [240117_iNat_data_exploration_plot_code.R](https://github.com/TBNworkGroup/iNaturalist_data_to_OP/blob/main/240117_iNat_data_exploration_plot_code.R) 細節說明
+### Script [240117_iNat_data_exploration_plot_code.R]() 細節說明
 
 #### 1. initialization
   * 建立相對路徑
