@@ -1,4 +1,4 @@
-# iNat_data_to_OP
+# iNat_data_to_TBN
 
 ### iNaturalist對應TBN填入資料欄位
 
