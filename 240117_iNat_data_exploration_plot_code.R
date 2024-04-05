@@ -60,8 +60,6 @@ for (i in 1:length(unique(plot1_data3$county))) {
   datalist[[i]] <- table
 }
 
-
-
 for (i in 1:length(unique(plot1_data3$county))) {
   table<-datalist[[i]]
   #  table$N<-round(table$N/100, digits = 2)
@@ -117,8 +115,6 @@ for (i in 1:ceiling(nrow(x)/5000)) {
   fwrite(table, sprintf("output/vertification_list/verlist_split_%s.csv", i))
 }
 
-
-
 #sample
 random_ls<-sample(1:nrow(all.data), size = 1000)
 table<-data.frame(matrix(NA,1000,19))
@@ -129,4 +125,3 @@ for (i in 1:1000) {
 }
 head(table)
 fwrite(table, "D:/Mong Chen/240110_iNat to OP/output/random_table.csv")
-
