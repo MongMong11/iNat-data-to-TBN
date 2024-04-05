@@ -12,14 +12,12 @@ showtext_auto()
 font_add("Microsoft_JhengHei", regular = "C:/Windows/Fonts/msjh.ttc")
 font_add("Microsoft_JhengHei_bold", regular = "C:/Windows/Fonts/msjhbd.ttc")
 
-#fread
-all.data <- 
-  lapply(1:4, function(i)
-    fread(file.path("D:/Mong Chen/240110_iNat to OP/output_to_op/", 
-                    sprintf("inat_split_%s.csv", i)), encoding = "UTF-8"
-    )
-  )
-all.data<- do.call(rbind,all.data)
+#input files
+file_name <- list.files("./result/", recursive=TRUE, full.names = TRUE, all.files = TRUE, include.dirs = TRUE, no..= FALSE)
+
+all.data<-lapply(file_name, function(x)
+    fread(x, sep = ",", colClasses = "character", encoding= "UTF-8"))%>%
+  do.call(rbind, .)
 
 #plot 1: bar plot of the data numbers by state and county
 
